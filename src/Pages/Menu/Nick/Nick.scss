@@ -1,0 +1,65 @@
+@import "../../../variables.scss";
+.nick-container {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  & span {
+    display: block;
+    margin-right: 5px;
+    margin-top: 20px;
+    font-family: $text-font;
+    font-weight: bold;
+    font-size: 25px;
+    color: $pink-neon;
+    opacity: 0.5;
+  }
+  &_K {
+    animation: bounce 6s infinite;
+    animation-delay: 0.3s;
+  }
+  &_L {
+    animation: bounce 6s infinite;
+    animation-delay: 3s;
+  }
+  &_E {
+    animation: bounce 6s infinite;
+    animation-delay: 6.1s;
+  }
+  &_M {
+    animation: bounce 6s infinite;
+    animation-delay: 2.5s;
+  }
+  &_C {
+    animation: bounce 6s infinite;
+    animation-delay: 4s;
+  }
+  &_I {
+    animation: bounce 6s infinite;
+    animation-delay: 9.4s;
+  }
+  &_A {
+    animation: bounce 6s infinite;
+    animation-delay: 5.7s;
+  }
+  &_lastK {
+    animation: bounce 6s infinite;
+    animation-delay: 1.5s;
+  }
+}
+
+@keyframes bounce {
+  0%,
+  7%,
+  15%,
+  26%,
+  33%,
+  100% {
+    transform: translateY(0);
+  }
+  13% {
+    transform: translateY(-7px);
+  }
+  18% {
+    transform: translateY(-4px);
+  }
+}
