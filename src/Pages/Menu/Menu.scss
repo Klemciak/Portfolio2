@@ -1,12 +1,13 @@
 @import "../../variables.scss";
 
 .menu {
-  font-family: "Bungee Outline", sans-serif;
+  font-family: $empty-font;
   font-size: 130px;
   letter-spacing: 5px;
   margin-top: 35px;
-
   &-list {
+    position: relative;
+    z-index: 10;
     list-style: none;
     display: flex;
     flex-direction: column;
@@ -49,5 +50,52 @@
         opacity: 1;
       }
     }
+  }
+}
+
+.img-container {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  & img {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    transform: translate(12%, 0%);
+    &:nth-child(1) {
+      z-index: 1;
+      animation: guyMove 4s ease-out 1;
+    }
+    &:nth-child(2) {
+      transform: translate(15%, 1%);
+      animation: guyMoveShadow 4s ease-out 1;
+    }
+  }
+}
+
+.citation {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  font-size: 14px;
+  font-family: $text-font;
+  padding: 10px;
+  color: $blue-neon;
+}
+
+@keyframes guyMove {
+  0% {
+    transform: translate(14%, 0%);
+  }
+  100% {
+    transform: translate(12%, 0%);
+  }
+}
+@keyframes guyMoveShadow {
+  0% {
+    transform: translate(13%, 0%);
+  }
+  100% {
+    transform: translate(15%, 1%);
   }
 }

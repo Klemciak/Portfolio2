@@ -29,13 +29,14 @@ const Menu = () => {
         </ul>
       </div>
       <div className="img-container">
-        <img src={menuGuy} alt="" />
-        <img src={menuGuyShadow} alt="" />
+        <img src={menuGuy} alt="guy dressed in neon colors" />
+        <img src={menuGuyShadow} alt="shadow of a guy dressed in neon colors" />
       </div>
       <div className="citation">
         <p>
-          "Lepiej bez celu iść naprzód niż bez celu stać w miejscu, a z
-          pewnością o niebo lepiej, niż bez celu się cofać." - Andrzej Sapkowski
+          "Lepiej bez celu iść naprzód niż bez celu stać w miejscu,
+          <br /> a z pewnością o niebo lepiej, niż bez celu się cofać." -
+          <strong> Andrzej Sapkowski</strong>
         </p>
       </div>
     </div>
