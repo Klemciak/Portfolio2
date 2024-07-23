@@ -2,6 +2,8 @@ import React from "react";
 import { NavLink } from "react-router-dom";
 import "./Menu.scss";
 import Nick from "./Nick/Nick";
+import menuGuy from "../../Images/menuGuy.png";
+import menuGuyShadow from "../../Images/menuGuyShadow.png";
 
 const Menu = () => {
   return (
@@ -10,19 +12,25 @@ const Menu = () => {
       <div className="menu">
         <ul className="menu-list">
           <li>
-            <NavLink to="/about">o mnie</NavLink>
+            <NavLink to="/about" className="menu-link">
+              o mnie
+            </NavLink>
           </li>
           <li>
-            <NavLink to="/projects">projekty</NavLink>
+            <NavLink to="/projects" className="menu-link">
+              projekty
+            </NavLink>
           </li>
           <li>
-            <NavLink to="/contact">kontakt</NavLink>
+            <NavLink to="/contact" className="menu-link">
+              kontakt
+            </NavLink>
           </li>
         </ul>
       </div>
       <div className="img-container">
-        <img src="" alt="" />
-        <img src="" alt="" />
+        <img src={menuGuy} alt="" />
+        <img src={menuGuyShadow} alt="" />
       </div>
       <div className="citation">
         <p>

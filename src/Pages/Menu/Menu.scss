@@ -1,1 +1,53 @@
 @import "../../variables.scss";
+
+.menu {
+  font-family: "Bungee Outline", sans-serif;
+  font-size: 130px;
+  letter-spacing: 5px;
+  margin-top: 35px;
+
+  &-list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    & li {
+      transform-style: preserve-3d;
+      transform: rotateY(-7deg) rotateX(30deg) rotateZ(3deg);
+      transition: 1s;
+      margin: 40px 0 0 50px;
+
+      &:hover {
+        transform: rotateY(5deg) rotateX(0deg) rotateZ(0.5deg);
+      }
+
+      &:hover > .menu-link {
+        box-shadow: 40px 36px 24px 20px rgba(0, 0, 0, 1);
+      }
+      &:nth-child(2) {
+        transform: rotateY(-7deg) rotateX(-30deg) rotateZ(-2deg);
+        &:hover {
+          transform: rotateY(5deg) rotateX(0deg) rotateZ(0.5deg);
+        }
+      }
+    }
+
+    & .menu-link {
+      padding: 0 30px;
+      text-decoration: none;
+      color: $blue-neon;
+      opacity: 0.5;
+      background-color: black;
+      border: 2px solid $pink-neon;
+      border-radius: 15px;
+      box-shadow: 5px 12px 0px 3px rgba(0, 0, 0, 1);
+      transition: 1s;
+      &:hover {
+        text-shadow: 0px 0px 200px $blue-neon;
+        font-weight: bold;
+        opacity: 1;
+      }
+    }
+  }
+}

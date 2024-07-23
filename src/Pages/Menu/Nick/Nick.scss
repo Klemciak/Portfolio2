@@ -3,6 +3,7 @@
   display: flex;
   align-items: center;
   justify-content: end;
+  margin-right: 30px;
   & span {
     display: block;
     margin-right: 5px;
@@ -10,8 +11,7 @@
     font-family: $text-font;
     font-weight: bold;
     font-size: 25px;
-    color: $pink-neon;
-    opacity: 0.5;
+    color: $darkPink-neon;
   }
   &_K {
     animation: bounce 6s infinite;
@@ -55,11 +55,14 @@
   33%,
   100% {
     transform: translateY(0);
+    text-shadow: 3px 2px 0px rgba(0, 0, 0, 1);
   }
   13% {
     transform: translateY(-7px);
+    text-shadow: 5px 18px 4px rgba(0, 0, 0, 1);
   }
   18% {
     transform: translateY(-4px);
+    text-shadow: 4px 10px 2.5px rgba(0, 0, 0, 1);
   }
 }

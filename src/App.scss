@@ -10,9 +10,7 @@
   justify-content: start;
   align-items: center;
   min-height: 100vh;
-  position: relative;
   background-color: $bgc-color;
-  z-index: -100;
 }
 
 .frame {
@@ -31,5 +29,4 @@
     );
   background-origin: border-box;
   background-clip: content-box, border-box;
-  z-index: -90;
 }
