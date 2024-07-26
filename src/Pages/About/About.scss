@@ -31,6 +31,9 @@
   padding-top: 40px;
   height: 95vh;
   overflow: scroll;
+  & .text {
+    margin-right: 10px;
+  }
   &::-webkit-scrollbar {
     display: none;
     scrollbar-width: none;
@@ -47,9 +50,9 @@
     background-color: rgba(0, 0, 0, 0.603);
     border-radius: 15px;
     text-align: start;
-    color: $pink-neon;
     font-family: $text-font;
     box-shadow: 5px 12px 0px 3px rgba(0, 0, 0, 1);
+    color: $pink-neon;
 
     &:nth-child(odd) {
       color: $blue-neon;
@@ -112,7 +115,7 @@
 
 @keyframes aboutGuyMove {
   0% {
-    filter: brightness(0.3);
+    filter: brightness(0.2);
     transform: scale(0.9) translate(-20%, 10%);
   }
   100% {

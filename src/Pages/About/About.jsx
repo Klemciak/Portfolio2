@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import "./About.scss";
 import aboutGuy from "../../Images/aboutGuy.png";
 import aboutGuyShadow from "../../Images/aboutGuyShadow.png";
-
+import Navbar from "../../Components/Navbar/Navbar";
 const slides = [
   {
     title: "Cześć, mam na imię Karol",
@@ -104,6 +104,7 @@ const About = () => {
   };
   return (
     <div className="about-wrap">
+      <Navbar />
       <div className="about">
         <div className="about-img">
           <img src={aboutGuy} alt="" />
@@ -111,7 +112,7 @@ const About = () => {
         </div>
 
         <div className="about-text">
-          <div>
+          <div className="text">
             <h2>o mnie</h2>
             <p className="about-text-center">{slides[slideIndex].title}</p>
             <p>{slides[slideIndex].text1}</p>
