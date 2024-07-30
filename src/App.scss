@@ -17,7 +17,9 @@
 .frame {
   position: relative;
   height: 100vh;
+  max-height: 1000px;
   width: 85%;
+  max-width: 1720px;
   border: 20px solid transparent;
   border-radius: 5px;
   background: linear-gradient($bgc-color, $bgc-color),
