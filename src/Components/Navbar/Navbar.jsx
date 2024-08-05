@@ -1,11 +1,14 @@
 import React, { useState } from "react";
-import { Link, NavLink } from "react-router-dom";
+import { Link } from "react-router-dom";
 import "./Navbar.scss";
+import Hamburger from "./Hamburger/Hamburger";
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
   };
+
   return (
     <div className="navbar">
       <div className="navbar-back">
@@ -18,22 +21,7 @@ const Navbar = () => {
           <span></span>
           <span></span>
         </label>
-        <div className={`hamburger-nav ${isMenuOpen ? "open" : ""}`}>
-          <ul className="nav">
-            <li>
-              <NavLink to="/">menu</NavLink>
-            </li>
-            <li>
-              <NavLink to="/about">o mnie</NavLink>
-            </li>
-            <li>
-              <NavLink to="/projects">projekty</NavLink>
-            </li>
-            <li>
-              <NavLink to="/contact">kontakt</NavLink>
-            </li>
-          </ul>
-        </div>
+        <Hamburger isMenuOpen={isMenuOpen} toggleMenu={toggleMenu} />
       </div>
     </div>
   );
