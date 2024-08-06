@@ -3,9 +3,18 @@ import "./Contact.scss";
 import postbox from "../../Images/postbox.png";
 import facebook from "../../Images/facebook.png";
 import Navbar from "../../Components/Navbar/Navbar";
+import { motion } from "framer-motion";
+import {
+  animationTextContact,
+  animationProps,
+} from "../../Components/Animations/Animations.jsx";
+
 const Contact = () => {
   return (
-    <div className="contact-wrap">
+    <motion.div
+      className="contact-wrap"
+      {...animationProps(animationTextContact)}
+    >
       <Navbar />
       <h2 className="contact-title">kontakt</h2>
       <div className="contacts">
@@ -18,7 +27,7 @@ const Contact = () => {
           <img src={postbox} alt="neon postbox" />
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 

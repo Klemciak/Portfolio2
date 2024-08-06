@@ -104,30 +104,11 @@
   &:nth-child(1) {
     filter: brightness(0.6);
     z-index: 1;
-    transform: scale(0.9) translate(-15%, 10%);
-    animation: aboutGuyMove 1.5s 1;
+    left: -5%;
+    bottom: -10%;
   }
   &:nth-child(2) {
-    transform: scale(0.9) translate(-17%, 10%);
-    animation: aboutGuyShadowMove 1.5s 1;
-  }
-}
-
-@keyframes aboutGuyMove {
-  0% {
-    filter: brightness(0.2);
-    transform: scale(0.9) translate(-20%, 10%);
-  }
-  100% {
-    filter: brightness(0.6);
-    transform: scale(0.9) translate(-15%, 10%);
-  }
-}
-@keyframes aboutGuyShadowMove {
-  0% {
-    transform: scale(0.9) translate(-14%, 10%);
-  }
-  100% {
-    transform: scale(0.9) translate(-17%, 10%);
+    left: -7%;
+    bottom: -10%;
   }
 }

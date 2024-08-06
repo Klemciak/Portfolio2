@@ -1,14 +1,22 @@
 import React from "react";
-import { NavLink } from "react-router-dom";
+import { Form, NavLink } from "react-router-dom";
 import "./Menu.scss";
 import Nick from "./Nick/Nick";
 import menuGuy from "../../Images/menuGuy.png";
 import menuGuyShadow from "../../Images/menuGuyShadow.png";
+import { motion } from "framer-motion";
+import {
+  animationTextMenu,
+  animationImgMenu,
+  animationProps,
+} from "../../Components/Animations/Animations.jsx";
 
 const Menu = () => {
   return (
-    <div className="menu-wrap">
-      <Nick />
+    <motion.div className="menu-wrap" {...animationProps(animationTextMenu)}>
+      <div>
+        <Nick />
+      </div>
       <div className="menu">
         <ul className="menu-list">
           <li>
@@ -28,10 +36,13 @@ const Menu = () => {
           </li>
         </ul>
       </div>
-      <div className="img-container">
+      <motion.div
+        className="img-container"
+        {...animationProps(animationImgMenu, 1)}
+      >
         <img src={menuGuy} alt="guy dressed in neon colors" />
         <img src={menuGuyShadow} alt="shadow of a guy dressed in neon colors" />
-      </div>
+      </motion.div>
       <div className="citation">
         <p>
           "Lepiej bez celu iść naprzód niż bez celu stać w miejscu,
@@ -39,7 +50,7 @@ const Menu = () => {
           <strong> Andrzej Sapkowski</strong>
         </p>
       </div>
-    </div>
+    </motion.div>
   );
 };
 

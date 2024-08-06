@@ -4,6 +4,13 @@ import "./About.scss";
 import aboutGuy from "../../Images/aboutGuy.png";
 import aboutGuyShadow from "../../Images/aboutGuyShadow.png";
 import Navbar from "../../Components/Navbar/Navbar";
+import { motion } from "framer-motion";
+import {
+  animationTextAbout,
+  animationImgAbout,
+  animationProps,
+} from "../../Components/Animations/Animations.jsx";
+
 const slides = [
   {
     title: "Cześć, mam na imię Karol",
@@ -103,12 +110,20 @@ const About = () => {
     );
   };
   return (
-    <div className="about-wrap">
+    <motion.div className="about-wrap" {...animationProps(animationTextAbout)}>
       <Navbar />
       <div className="about">
         <div className="about-img">
-          <img src={aboutGuy} alt="" />
-          <img src={aboutGuyShadow} alt="" />
+          <motion.img
+            src={aboutGuy}
+            alt=""
+            {...animationProps(animationImgAbout)}
+          />
+          <motion.img
+            src={aboutGuyShadow}
+            alt=""
+            {...animationProps(animationImgAbout)}
+          />
         </div>
 
         <div className="about-text">
@@ -124,7 +139,7 @@ const About = () => {
           </div>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 

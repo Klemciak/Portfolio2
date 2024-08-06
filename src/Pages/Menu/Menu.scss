@@ -66,11 +66,10 @@
     transform: translate(12%, 0%);
     &:nth-child(1) {
       z-index: 1;
-      animation: guyMove 1s ease-out 1;
     }
     &:nth-child(2) {
       transform: translate(15%, 1%);
-      animation: guyMoveShadow 1s ease-out 1;
+      animation: guyMoveShadow 1.5s ease-out 1;
     }
   }
 }
@@ -85,17 +84,9 @@
   color: $blue-neon;
 }
 
-@keyframes guyMove {
-  0% {
-    transform: translate(14%, 0%);
-  }
-  100% {
-    transform: translate(12%, 0%);
-  }
-}
 @keyframes guyMoveShadow {
   0% {
-    transform: translate(13%, 0%);
+    transform: translate(-15%, 0%);
   }
   100% {
     transform: translate(15%, 1%);
