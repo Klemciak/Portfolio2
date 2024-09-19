@@ -1,12 +1,18 @@
-import React, { useState } from "react";
+import React, { useState, useRef } from "react";
 import { Link } from "react-router-dom";
 import "./Navbar.scss";
 import Hamburger from "./Hamburger/Hamburger";
+
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const checkboxRef = useRef(null);
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
+
+    if (checkboxRef.current) {
+      checkboxRef.current.checked = !isMenuOpen;
+    }
   };
 
   return (
@@ -16,7 +22,12 @@ const Navbar = () => {
       </div>
       <div className="navbar-hamburger">
         <label htmlFor="check">
-          <input type="checkbox" id="check" onClick={toggleMenu} />
+          <input
+            type="checkbox"
+            id="check"
+            ref={checkboxRef}
+            onClick={toggleMenu}
+          />
           <span></span>
           <span></span>
           <span></span>
