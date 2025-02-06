@@ -33,3 +33,13 @@
   background-origin: border-box;
   background-clip: content-box, border-box;
 }
+@media (max-width: 1340px), (max-height: 800px) {
+  .frame {
+    width: 100%;
+  }
+}
+@media (max-width: 670px), (max-height: 525px) {
+  .frame {
+    border-width: 10px;
+  }
+}

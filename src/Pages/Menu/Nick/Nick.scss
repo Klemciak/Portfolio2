@@ -66,3 +66,20 @@
     text-shadow: 4px 10px 2.5px rgba(0, 0, 0, 1);
   }
 }
+
+@media (max-width: 1000px), (max-height: 650px) {
+  .nick-container {
+    margin-right: 0px;
+    & span {
+      margin-top: 0px;
+      font-size: 20px;
+    }
+  }
+}
+@media (max-width: 570px), (max-height: 480px) {
+  .nick-container {
+    & span {
+      font-size: 15px;
+    }
+  }
+}
