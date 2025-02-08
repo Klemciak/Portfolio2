@@ -104,6 +104,10 @@
   }
 }
 @media (max-height: 520px) {
+  .hamburger-nav {
+    right: -100%;
+    transition: 0.5s;
+  }
   .nav {
     & li {
       text-align: end;

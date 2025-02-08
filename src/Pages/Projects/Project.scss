@@ -124,6 +124,7 @@
     border-radius: 15px 0 0 15px;
     box-shadow: 4px 6px 5px 3px rgba(0, 0, 0, 1);
     cursor: pointer;
+    transition: 0.3s;
     &:nth-child(2) {
       border-radius: 0 15px 15px 0;
     }
@@ -137,4 +138,83 @@
 .project:hover .project-links {
   pointer-events: all;
   opacity: 1;
+}
+@media (max-width: 1300px), (max-height: 790px) {
+  .project .project-title {
+    font-size: 50px;
+  }
+  .project:hover .project-title {
+    font-size: 33px;
+  }
+  .project .project-links {
+    bottom: 7%;
+    a {
+      font-size: 25px;
+    }
+  }
+}
+@media (max-width: 1000px), (max-height: 650px) {
+  .project .project-title {
+    font-size: 40px;
+  }
+  .project:hover .project-title {
+    font-size: 28px;
+  }
+  .project .project-links {
+    right: 2%;
+    bottom: 6%;
+    a {
+      font-size: 23px;
+    }
+  }
+}
+@media (max-width: 700px), (max-height: 500px) {
+  .project .project-title {
+    font-size: 30px;
+  }
+  .project:hover .project-title {
+    font-size: 22px;
+  }
+  .project .project-links {
+    right: 2%;
+    bottom: 8%;
+    a {
+      font-size: 20px;
+    }
+  }
+}
+@media (max-width: 500px), (max-height: 400px) {
+  .project {
+    &:hover {
+      flex-grow: 2;
+    }
+  }
+  .project .project-title {
+    font-size: 24px;
+  }
+  .project:hover .project-title {
+    font-size: 19px;
+  }
+  .project .project-links {
+    right: 2%;
+    bottom: 8%;
+    a {
+      font-size: 16px;
+    }
+  }
+}
+@media (max-width: 350px), (max-height: 350px) {
+  .project .project-title {
+    font-size: 18px;
+  }
+  .project:hover .project-title {
+    font-size: 15px;
+  }
+  .project .project-links {
+    right: 2%;
+    bottom: 10%;
+    a {
+      font-size: 12px;
+    }
+  }
 }
