@@ -3,6 +3,8 @@ import "./Contact.scss";
 import postbox from "../../Images/postbox.png";
 import facebook from "../../Images/facebook.png";
 import Navbar from "../../Components/Navbar/Navbar";
+import contactGuy from "../../Images/contactGuy.png";
+import contactGuyShadow from "../../Images/contactGuyShadow.png";
 import { motion } from "framer-motion";
 import {
   animationTextContact,
@@ -25,6 +27,10 @@ const Contact = () => {
         <div className="email">
           <a href="mailto:klemcio@interia.pl">klemcio@interia.pl</a>
           <img src={postbox} alt="neon postbox" />
+        </div>
+        <div className="contact-img">
+          <img src={contactGuy} alt="contact character" />
+          <img src={contactGuyShadow} alt="contact character shadow" />
         </div>
       </div>
     </motion.div>
