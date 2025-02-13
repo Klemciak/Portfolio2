@@ -24,16 +24,12 @@
     font-size: 30px;
     padding: 10px 10px;
     color: $blue-neon;
-    text-shadow: 0px 0px 20px $blue-neon;
     background-color: rgba(0, 0, 0, 0.603);
     border: 2px solid $blue-neon;
     outline: 2px solid $pink-neon;
     border-radius: 10px;
-    box-shadow: 0px 0px 10px $pink-neon, inset 0px 0px 5px $blue-neon;
-
     &.active {
       color: $pink-neon;
-      text-shadow: 0px 0px 20px $pink-neon;
     }
   }
 }

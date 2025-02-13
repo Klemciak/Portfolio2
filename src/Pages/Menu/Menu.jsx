@@ -38,7 +38,7 @@ const Menu = () => {
       </div>
       <motion.div
         className="img-container"
-        {...animationProps(animationImgMenu, 1)}
+        {...animationProps(animationImgMenu, 1.5)}
       >
         <img src={menuGuy} alt="guy dressed in neon colors" />
         <img src={menuGuyShadow} alt="shadow of a guy dressed in neon colors" />
