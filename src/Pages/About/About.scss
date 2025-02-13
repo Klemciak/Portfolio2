@@ -20,11 +20,10 @@
   letter-spacing: 5px;
   padding: 0 60px;
   color: $blue-neon;
-  background-color: hsla(0, 0%, 0%, 0.8);
+  background-color: hsla(0, 0%, 0%, 0.6);
   border: 2px solid $pink-neon;
   border-radius: 15px;
-  box-shadow: 5px 12px 0px 3px rgba(0, 0, 0, 0.8), inset 0px 0px 15px $pink-neon;
-  text-shadow: 0px 0px 100px $blue-neon;
+  box-shadow: 5px 12px 2px 3px rgba(0, 0, 0, 0.8), inset 0px 0px 15px $pink-neon;
 }
 
 .about-text {
@@ -53,7 +52,6 @@
     border-radius: 15px;
     text-align: start;
     font-family: $text-font;
-    box-shadow: 5px 12px 0px 3px rgba(0, 0, 0, 0.6);
     color: $pink-neon;
 
     &:nth-child(odd) {
@@ -182,8 +180,6 @@
     font-size: 35px;
     padding: 0 30px;
     letter-spacing: 3px;
-    box-shadow: 3px 6px 0px 3px rgba(0, 0, 0, 0.8),
-      inset 0px 0px 10px $pink-neon;
   }
   .about-text {
     width: 70%;
@@ -194,7 +190,6 @@
       margin-top: 15px;
       line-height: 18px;
       padding: 5px 12px;
-      box-shadow: 3px 6px 0px 3px rgba(0, 0, 0, 0.6);
     }
     p:nth-of-type(1) {
       height: 30vh;

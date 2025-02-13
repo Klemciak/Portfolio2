@@ -17,7 +17,6 @@
   border: 2px solid $pink-neon;
   border-radius: 15px;
   box-shadow: 5px 12px 2px 3px rgba(0, 0, 0, 0.8), inset 0px 0px 15px $pink-neon;
-  text-shadow: 0px 0px 100px $blue-neon;
 }
 
 .contacts {
@@ -53,8 +52,8 @@
     text-decoration: none;
     padding: 10px 20px;
     color: $blue-neon;
-    text-shadow: 0px 0px 20px $blue-neon;
-    box-shadow: 0px 0px 20px $pink-neon, inset 0px 0px 10px $blue-neon;
+
+    box-shadow: inset 0px 0px 10px $blue-neon;
     background-color: #000000ce;
   }
   & img {
