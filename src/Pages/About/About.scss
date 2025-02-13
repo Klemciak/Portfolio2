@@ -23,7 +23,6 @@
   background-color: hsla(0, 0%, 0%, 0.6);
   border: 2px solid $pink-neon;
   border-radius: 15px;
-  box-shadow: 5px 12px 2px 3px rgba(0, 0, 0, 0.8), inset 0px 0px 15px $pink-neon;
 }
 
 .about-text {
@@ -48,7 +47,7 @@
     font-size: 16px;
     line-height: 23px;
     border: 1px solid $blue-neon;
-    background-color: rgba(0, 0, 0, 0.6);
+    background-color: rgba(0, 0, 0, 0.8);
     border-radius: 15px;
     text-align: start;
     font-family: $text-font;
@@ -99,7 +98,6 @@
   position: absolute;
   height: 115%;
   &:nth-child(1) {
-    filter: brightness(0.6);
     z-index: 2;
     left: -5%;
     bottom: -10%;
