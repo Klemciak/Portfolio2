@@ -36,10 +36,7 @@ const Projects = () => {
             >
               Kod <FontAwesomeIcon icon={faGithub} />
             </a>
-            <a
-              className="link-site"
-              href="https://aurum-motivatio.netlify.app/"
-            >
+            <a className="link-site" href="https://aurum-motivatio.vercel.app/">
               Zobacz stronę <FontAwesomeIcon icon={faSistrix} />
             </a>
           </div>
@@ -53,7 +50,7 @@ const Projects = () => {
             >
               Kod <FontAwesomeIcon icon={faGithub} />
             </a>
-            <a className="link-site" href="https://o-niczym.netlify.app/">
+            <a className="link-site" href="https://o-niczym.vercel.app/">
               Zobacz stronę <FontAwesomeIcon icon={faSistrix} />
             </a>
           </div>
