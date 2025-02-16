@@ -5,11 +5,11 @@ const Cursor = () => {
   useEffect(() => {
     neonCursor({
       el: document.getElementById("app-container"),
-      shaderPoints: 16,
-      curvePoints: 80,
-      curveLerp: 0.5,
-      radius1: 2,
-      radius2: 15,
+      shaderPoints: 4,
+      curvePoints: 10,
+      curveLerp: 0.2,
+      radius1: 3,
+      radius2: 5,
       velocityTreshold: 10,
       sleepRadiusX: 100,
       sleepRadiusY: 100,
