@@ -9,7 +9,7 @@ const Cursor = () => {
       curvePoints: 10,
       curveLerp: 0.2,
       radius1: 3,
-      radius2: 5,
+      radius2: 10,
       velocityTreshold: 10,
       sleepRadiusX: 100,
       sleepRadiusY: 100,
