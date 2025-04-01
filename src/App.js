@@ -5,7 +5,7 @@ import Menu from "./Pages/Menu/Menu";
 import About from "./Pages/About/About";
 import Projects from "./Pages/Projects/Projects";
 import Contact from "./Pages/Contact/Contact";
-import Cursor from "./Components/cursor/Cursor.jsx";
+import Laser from "./Components/Laser/Laser.jsx";
 import Preloader from "./Components/Preloader/Preloader.jsx";
 import { AnimatePresence } from "framer-motion";
 
@@ -14,7 +14,7 @@ function App() {
   return (
     <div id="app-container" className="app-container">
       <Preloader />
-      <Cursor />
+      <Laser />
       <div className="frame">
         <AnimatePresence mode="wait">
           <Routes location={location} key={location.pathname}>

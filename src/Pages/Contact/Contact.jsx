@@ -25,7 +25,9 @@ const Contact = () => {
           <img src={facebook} alt="neon facebook F" />
         </div>
         <div className="email">
-          <a href="mailto:klemcio@interia.pl">klemcio@interia.pl</a>
+          <a href="mailto:karol.ciarach.msg@gmail.com">
+            karol.ciarach.msg@gmail.com
+          </a>
           <img src={postbox} alt="neon postbox" />
         </div>
         <div className="contact-img">
